@@ -1,8 +1,5 @@
-"use client"
-
 import ShadowCard from "./ShadowCard"
 import ShadowText from "./ShadowText"
-import { cn } from "@/lib/utils"
 import {
     Github,
     Linkedin,
@@ -17,7 +14,7 @@ export default function HeroSection() {
         <section className="relative min-h-screen flex items-center bg-background px-6 mt-20 lg:mt-0">
 
             {/* LEFT SOCIAL FLOAT */}
-            <div className="hidden lg:flex flex-col gap-6 absolute left-8 top-1/2 -translate-y-1/2">
+            <div className="hidden 2xl:flex flex-col gap-6 absolute left-8 top-1/2 -translate-y-1/2">
                 {[Github, Linkedin, Mail, Send].map((Icon, i) => (
                     <ShadowCard variant="button"
                         key={i}
@@ -32,9 +29,9 @@ export default function HeroSection() {
             <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
 
                 {/* LEFT CONTENT */}
-                <div className="space-y-8">
+                <div className="space-y-4 2xl:space-y-8">
 
-                    <p className="text-muted-foreground text-sm 2xl:text-lg">
+                    <p className="text-muted-foreground text-sm 2xl:text-lg m-0">
                         +10 years
                     </p>
 
@@ -45,15 +42,14 @@ export default function HeroSection() {
                     </ShadowText>
 
                     <p className="text-muted-foreground max-w-lg text-lg leading-relaxed">
-                        Développeur <span className="font-semibold text-foreground">full-stack freelance</span>,
-                        co-gérant d'entreprise pendant plus de 10 ans.
-                        Je conçois et développe des produits web
-                        <span className="font-semibold text-foreground"> fiables, performants et monétisables</span>.
+                        <span className="font-semibold text-foreground">full-stack </span>freelance,
+                        reelance developer, co-business manager for more than 10 years. I design and develop
+                        <span className="font-semibold text-foreground"> reliable, efficient and monetizable </span>web products: SaaS, web platforms, Stripe payments, technical SEO.
                     </p>
 
                     <div className="flex items-center gap-3 text-sm text-muted-foreground">
                         <Globe size={16} />
-                        Basé en France (Toulouse) • Missions via Malt
+                        Based in Pakistan (Peshawar) • Missions via fiverr/upwork
                     </div>
 
                 </div>
@@ -118,12 +114,25 @@ export default function HeroSection() {
 
                     </ShadowCard>
 
-                    {/* CTA BUTTON */}
-                    <div className="absolute -bottom-28 right-0">
-                        <ShadowCard variant="button" className="px-6 py-3 rounded-full cursor-pointer flex items-center gap-2">
-                            Me contacter sur Malt
-                            <ArrowRight size={16} />
-                        </ShadowCard>
+                    <div className="mt-10 flex justify-between items-center">
+                        <div className="flex 2xl:hidden gap-5">
+                            {[Github, Linkedin, Mail, Send].map((Icon, i) => (
+                                <ShadowCard variant="button"
+                                    key={i}
+                                    className="p-3 rounded-full cursor-pointer"
+                                >
+                                    <Icon size={18} />
+                                </ShadowCard>
+                            ))}
+                        </div>
+
+                        {/* CTA BUTTON */}
+                        <div className="ms-auto">
+                            <ShadowCard variant="button" className="px-6 py-3 rounded-full cursor-pointer flex items-center gap-2">
+                                Contact me now
+                                <ArrowRight size={16} />
+                            </ShadowCard>
+                        </div>
                     </div>
 
                 </div>

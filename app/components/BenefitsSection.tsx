@@ -10,7 +10,7 @@ export default function BenefitsSection() {
             <div className="max-w-7xl mx-auto">
 
                 {/* Header */}
-                <div className="max-w-2xl mb-20">
+                <div className="max-w-2xl mb-10 2xl:mb-20">
                     <p className="text-sm text-muted-foreground mb-3">
                         Benefits
                     </p>
@@ -90,7 +90,7 @@ export default function BenefitsSection() {
                             </InnerShadowCard>
                         </div>
 
-                        <h3 className="font-semibold text-lg mb-4">
+                        <h3 className="font-semibold text-lg 2xl:mb-4">
                             Stripe Payments
                         </h3>
 
@@ -104,7 +104,7 @@ export default function BenefitsSection() {
                 </div>
 
                 {/* CTA */}
-                <div className="flex justify-end mt-16">
+                <div className="flex justify-end mt-10 2xl:mt-16">
                     <ShadowCard
                         variant="button"
                         className="px-6 py-3 rounded-full cursor-pointer text-sm font-medium"

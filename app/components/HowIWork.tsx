@@ -16,7 +16,7 @@ export default function HowIWorkSection() {
             <div className="max-w-7xl mx-auto">
 
                 {/* Header */}
-                <div className="max-w-2xl mb-20">
+                <div className="max-w-2xl mb-10 2xl:mb-20">
                     <p className="text-sm text-muted-foreground mb-3">
                         Services
                     </p>
@@ -32,7 +32,7 @@ export default function HowIWorkSection() {
                 </div>
 
                 {/* ===== Top 3 Cards ===== */}
-                <div className="grid md:grid-cols-3 gap-10 mb-24">
+                <div className="grid md:grid-cols-3 gap-10 mb-10 2xl:mb-24">
 
                     {/* Card 1 */}
                     <ShadowCard className="p-8 rounded-3xl">
@@ -102,9 +102,9 @@ export default function HowIWorkSection() {
                 </div>
 
                 {/* Divider */}
-                <div className="border-t border-border mb-20" />
+                <div className="border-t border-border mb-10 2xl:mb-20" />
 
-                <p className="text-xs uppercase tracking-widest text-muted-foreground text-center mb-16">
+                <p className="text-xs uppercase tracking-widest text-muted-foreground text-center mb-10 2xl:mb-16">
                     Supplementary benefits
                 </p>
 
@@ -183,7 +183,7 @@ export default function HowIWorkSection() {
                 </div>
 
                 {/* Bottom CTA */}
-                <div className="flex justify-center gap-6 mt-20 flex-wrap">
+                <div className="flex justify-center gap-6 mt-10 2xl:mt-20 flex-wrap">
                     <ShadowCard
                         variant="button"
                         className="px-8 py-3 rounded-full text-sm cursor-pointer"

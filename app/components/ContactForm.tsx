@@ -39,7 +39,7 @@ export default function ContactFormSection() {
                 </div>
 
                 {/* Form */}
-                <form onSubmit={handleSubmit} className="space-y-10">
+                <form onSubmit={handleSubmit} className="space-y-5 2xl:space-y-10">
 
                     {/* Name */}
                     <div className="space-y-4">

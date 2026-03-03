@@ -10,7 +10,7 @@ export default function WhyTrustSection() {
             <div className="max-w-7xl mx-auto">
 
                 {/* Top Text */}
-                <div className="max-w-2xl mb-16">
+                <div className="max-w-2xl mb-10 2xl:mb-16">
                     <p className="text-sm text-muted-foreground mb-3">
                         Experience
                     </p>
@@ -106,7 +106,7 @@ export default function WhyTrustSection() {
                 </div>
 
                 {/* CTA */}
-                <div className="flex justify-end mt-16">
+                <div className="flex justify-end mt-10 2xl:mt-16">
                     <ShadowCard
                         variant="button"
                         className="px-6 py-3 rounded-full cursor-pointer text-sm font-medium"

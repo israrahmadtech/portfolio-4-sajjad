@@ -15,12 +15,12 @@ export default function FAQSection() {
             <div className="max-w-4xl mx-auto">
 
                 {/* Header */}
-                <div className="text-center mb-24">
-                    <p className="text-sm text-muted-foreground mb-4 uppercase tracking-widest">
+                <div className="text-center mb-15 2xl:mb-24">
+                    <p className="text-sm text-muted-foreground mb-0 2xl:mb-4 uppercase tracking-widest">
                         FAQ
                     </p>
 
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 2xl:mb-6">
                         Frequently Asked Questions
                     </h2>
 

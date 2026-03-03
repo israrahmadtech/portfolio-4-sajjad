@@ -11,16 +11,16 @@ export default function AchievementsSection() {
             <div className="max-w-7xl mx-auto">
 
                 {/* Header */}
-                <div className="max-w-2xl mb-20">
-                    <p className="text-sm text-muted-foreground mb-3">
+                <div className="max-w-2xl mb-10 2xl:mb-20">
+                    <p className="text-sm text-muted-foreground mb-0 2xl:mb-3">
                         Achievements
                     </p>
 
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-3 2xl:mb-6">
                         Achievements in production
                     </h2>
 
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm 2xl:text-base text-muted-foreground leading-relaxed">
                         Real products, in production, used by real users.
                         No personal projects or abandoned side-projects.
                     </p>

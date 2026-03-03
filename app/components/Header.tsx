@@ -49,7 +49,7 @@ export default function Header() {
                         <ShadowCard variant="button" className="px-5 py-2 rounded-full cursor-pointer">
                             <div className="flex items-center gap-2 text-sm font-medium">
                                 <Rocket size={16} />
-                                Nouveau Projet
+                                New Projet
                             </div>
                         </ShadowCard>
 
