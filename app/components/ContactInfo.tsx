@@ -6,7 +6,7 @@ import { Info, Plus } from "lucide-react"
 
 export default function ContactCTASection() {
     return (
-        <section className="w-full py-32 px-6">
+        <section className="w-full pt-32 pb-15 px-6">
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
 
                 {/* ================= LEFT SIDE ================= */}

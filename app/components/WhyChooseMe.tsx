@@ -6,7 +6,7 @@ import InnerShadowCard from "./InnerShadowEffect"
 
 export default function WhyTrustSection() {
     return (
-        <section className="w-full py-32 px-6">
+        <section id="trust" className="w-full py-32 px-6">
             <div className="max-w-7xl mx-auto">
 
                 {/* Top Text */}

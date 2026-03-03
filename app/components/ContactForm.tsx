@@ -24,7 +24,7 @@ export default function ContactFormSection() {
     }
 
     return (
-        <section className="w-full py-32 px-6">
+        <section id="contact" className="w-full pb-32 px-6">
             <div className="max-w-3xl mx-auto">
 
                 {/* Header */}

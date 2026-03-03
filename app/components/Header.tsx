@@ -10,6 +10,16 @@ export default function Header() {
     const { theme, toggleTheme } = useTheme()
     const [mobileOpen, setMobileOpen] = useState(false)
 
+    const navItems = [
+        { label: "Hello", id: "hello" },
+        { label: "Trust", id: "trust" },
+        { label: "Proofs", id: "proofs" },
+        { label: "Results", id: "results" },
+        { label: "Offer", id: "offer" },
+        { label: "FAQ", id: "faq" },
+        { label: "Contact", id: "contact" },
+    ];
+
     return (
         <header className="w-full fixed top-0 left-0 z-50 bg-background/80 backdrop-blur-md">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -26,17 +36,16 @@ export default function Header() {
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-                    {["Hello", "Trust", "Proofs", "Results", "Offer", "FAQ", "Contact"].map(
-                        (item, i) => (
-                            <a
-                                key={i}
-                                href="#"
-                                className="text-muted-foreground hover:text-foreground transition-colors"
-                            >
-                                {item}
-                            </a>
-                        )
-                    )}
+
+                    {navItems.map((item, i) => (
+                        <a
+                            key={i}
+                            href={`#${item.id}`}
+                            className="py-2 text-muted-foreground hover:text-foreground transition-colors"
+                        >
+                            {item.label}
+                        </a>
+                    ))}
                 </nav>
 
                 {/* Right Side */}

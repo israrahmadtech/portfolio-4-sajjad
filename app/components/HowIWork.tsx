@@ -12,7 +12,7 @@ import {
 
 export default function HowIWorkSection() {
     return (
-        <section className="w-full py-32 px-6">
+        <section id="offer" className="w-full py-32 px-6">
             <div className="max-w-7xl mx-auto">
 
                 {/* Header */}

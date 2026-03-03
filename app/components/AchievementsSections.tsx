@@ -7,7 +7,7 @@ import InnerShadowCard from "./InnerShadowEffect"
 
 export default function AchievementsSection() {
     return (
-        <section className="w-full py-32 px-6">
+        <section id="proofs" className="w-full py-32 px-6">
             <div className="max-w-7xl mx-auto">
 
                 {/* Header */}

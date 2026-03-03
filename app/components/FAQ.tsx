@@ -11,7 +11,7 @@ import {
 
 export default function FAQSection() {
     return (
-        <section className="w-full py-32 px-6">
+        <section id="faq" className="w-full py-32 px-6">
             <div className="max-w-4xl mx-auto">
 
                 {/* Header */}

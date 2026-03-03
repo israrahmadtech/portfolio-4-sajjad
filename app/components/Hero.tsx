@@ -13,18 +13,6 @@ export default function HeroSection() {
     return (
         <section className="relative min-h-screen flex items-center bg-background px-6 mt-20 lg:mt-0">
 
-            {/* LEFT SOCIAL FLOAT */}
-            <div className="hidden 2xl:flex flex-col gap-6 absolute left-8 top-1/2 -translate-y-1/2">
-                {[Github, Linkedin, Mail, Send].map((Icon, i) => (
-                    <ShadowCard variant="button"
-                        key={i}
-                        className="p-3 rounded-full cursor-pointer"
-                    >
-                        <Icon size={18} />
-                    </ShadowCard>
-                ))}
-            </div>
-
             {/* CONTAINER */}
             <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
 
@@ -35,8 +23,8 @@ export default function HeroSection() {
                         +10 years
                     </p>
 
-                    <ShadowText className="text-card font-extrabold text-5xl md:text-7xl lg:text-8xl leading-tight tracking-tight">
-                        HELLO <br className="hidden xl:block" />
+                    <ShadowText className="text-card font-extrabold text-[15vw] sm:text-7xl 2xl:text-8xl leading-[60px] sm:leading-[90px] 2xl:leading-tight tracking-tight">
+                        HELLO <br />
                         I’M A <br />
                         FULLSTACK
                     </ShadowText>
@@ -57,7 +45,7 @@ export default function HeroSection() {
                 {/* RIGHT STACK CARD */}
                 <div className="relative">
 
-                    <ShadowCard className="p-10 rounded-4xl space-y-8">
+                    <ShadowCard className="p-10 rounded-4xl space-y-4 2xl:space-y-8">
 
                         <div>
                             <p className="text-xs uppercase tracking-widest text-muted-foreground">
@@ -115,7 +103,7 @@ export default function HeroSection() {
                     </ShadowCard>
 
                     <div className="mt-10 flex justify-between items-center">
-                        <div className="flex 2xl:hidden gap-5">
+                        <div className="flex gap-5">
                             {[Github, Linkedin, Mail, Send].map((Icon, i) => (
                                 <ShadowCard variant="button"
                                     key={i}

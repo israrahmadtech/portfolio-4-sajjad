@@ -6,7 +6,7 @@ import InnerShadowCard from "./InnerShadowEffect"
 
 export default function BenefitsSection() {
     return (
-        <section className="w-full py-32 px-6">
+        <section id="results" className="w-full py-32 px-6">
             <div className="max-w-7xl mx-auto">
 
                 {/* Header */}
