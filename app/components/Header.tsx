@@ -101,14 +101,14 @@ export default function Header() {
                 )}
             >
                 <div className="px-6 pb-6 flex flex-col gap-4">
-                    {["Hello", "Trust", "Proofs", "Results", "Offer", "FAQ", "Contact"].map(
+                    {navItems.map(
                         (item, i) => (
                             <a
                                 key={i}
-                                href="#"
+                                href={`#${item.id}`}
                                 className="py-2 text-muted-foreground hover:text-foreground transition-colors"
                             >
-                                {item}
+                                {item.label}
                             </a>
                         )
                     )}
