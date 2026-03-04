@@ -35,17 +35,10 @@ export default function InnerShadowCard({
             : isButton ? 8 : 14
 
         const getShadow = () => {
-            if (isDark) {
-                return `
-          inset ${shadow.x}px ${shadow.y}px ${blur}px rgba(0,0,0,0.6),
-          inset ${-shadow.x}px ${-shadow.y}px ${blur}px rgba(255,255,255,0.05)
-        `
-            }
-
             return `
-        inset ${shadow.x}px ${shadow.y}px ${blur}px rgba(0,0,0,0.15),
-        inset ${-shadow.x}px ${-shadow.y}px ${blur}px rgba(255,255,255,0.9)
-      `
+    inset ${shadow.x}px ${shadow.y}px ${blur}px var(--shadow-inner-dark),
+    inset ${-shadow.x}px ${-shadow.y}px ${blur}px var(--shadow-inner-light)
+  `
         }
 
         const updateShadow = () => {

@@ -25,27 +25,18 @@ export default function ShadowText({
         const shadow = { x: 4, y: 4 }
         const maxOffset = 6
 
-        const isDark = theme === "dark"
-
         const getShadow = () => {
-            if (isDark) {
-                // Softer + less spread for dark mode
-                return `
-                ${-shadow.x}px ${-shadow.y}px 8px rgba(0,0,0,0.6),
-                ${shadow.x}px ${shadow.y}px 10px rgba(255, 255, 255, 0.28)
-            `
-            }
-
-            // Original (light mode) — untouched
             return `
-            ${-shadow.x}px ${-shadow.y}px 10px rgba(0,0,0,0.2),
-            ${shadow.x}px ${shadow.y}px 10px rgba(255,255,255,0.9)
-        `
+    ${-shadow.x}px ${-shadow.y}px 10px var(--shadow-text-dark),
+    ${shadow.x}px ${shadow.y}px 10px var(--shadow-text-light)
+  `
         }
 
         const updateShadow = () => {
             el.style.textShadow = getShadow()
         }
+
+        updateShadow()
 
         gsap.set(el, { textShadow: getShadow() })
 

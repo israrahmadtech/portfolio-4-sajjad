@@ -8,9 +8,10 @@
   background-color: #EFF2F9;
 } */
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 /* Only required theme tokens */
 @theme inline {
   --color-background: var(--background);
@@ -61,6 +62,19 @@ html{
   --border: oklch(0.90 0.01 280);
   --input: oklch(0.90 0.01 280);
   --ring: oklch(0.60 0.02 280);
+
+  /* Light mMode Shadows */
+  /* ===== Outer Shadow ===== */
+  --shadow-outer-dark: rgba(0, 0, 0, 0.15);
+  --shadow-outer-light: rgba(255, 255, 255, 1);
+
+  /* ===== Inner Shadow ===== */
+  --shadow-inner-dark: rgba(0, 0, 0, 0.15);
+  --shadow-inner-light: rgba(255, 255, 255, 0.9);
+
+  /* ===== Text Shadow ===== */
+  --shadow-text-dark: rgba(0, 0, 0, 0.2);
+  --shadow-text-light: rgba(255, 255, 255, 0.9);
 }
 
 /* Dark Mode – inspired by your screenshot */
@@ -89,6 +103,19 @@ html{
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.55 0.02 280);
+
+  /* Dark Mode Shadows */
+  /* ===== Outer Shadow ===== */
+  --shadow-outer-dark: rgba(0, 0, 0, 0.6);
+  --shadow-outer-light: rgba(255, 255, 255, 0.08);
+
+  /* ===== Inner Shadow ===== */
+  --shadow-inner-dark: rgba(0, 0, 0, 0.6);
+  --shadow-inner-light: rgba(255, 255, 255, 0.05);
+
+  /* ===== Text Shadow ===== */
+  --shadow-text-dark: rgba(0, 0, 0, 0.6);
+  --shadow-text-light: rgba(255, 255, 255, 0.28);
 }
 
 @layer base {

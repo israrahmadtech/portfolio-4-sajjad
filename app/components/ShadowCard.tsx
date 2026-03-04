@@ -35,17 +35,10 @@ export default function ShadowCard({
       : isButton ? 12 : 20
 
     const getShadow = () => {
-      if (isDark) {
-        return `
-          ${-shadow.x}px ${-shadow.y}px ${blur}px rgba(0,0,0,0.6),
-          ${shadow.x}px ${shadow.y}px ${blur}px rgba(255,255,255,0.08)
-        `
-      }
-
       return `
-        ${-shadow.x}px ${-shadow.y}px ${blur}px rgba(0,0,0,0.15),
-        ${shadow.x}px ${shadow.y}px ${blur}px rgba(255,255,255,1)
-      `
+    ${-shadow.x}px ${-shadow.y}px ${blur}px var(--shadow-outer-light),
+    ${shadow.x}px ${shadow.y}px ${blur}px var(--shadow-outer-dark)
+  `
     }
 
     const updateShadow = () => {
