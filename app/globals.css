@@ -8,6 +8,9 @@
   background-color: #EFF2F9;
 } */
 
+html{
+  scroll-behavior: smooth;
+}
 /* Only required theme tokens */
 @theme inline {
   --color-background: var(--background);

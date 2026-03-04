@@ -25,7 +25,7 @@ export default function ShadowText({
         const shadow = { x: 4, y: 4 }
         const maxOffset = 6
 
-        const isDark = document.documentElement.classList.contains("dark")
+        const isDark = theme === "dark"
 
         const getShadow = () => {
             if (isDark) {

@@ -11,7 +11,7 @@ export default function Header() {
     const [mobileOpen, setMobileOpen] = useState(false)
 
     const navItems = [
-        { label: "Hello", id: "hello" },
+        { label: "Hello", id: "" },
         { label: "Trust", id: "trust" },
         { label: "Proofs", id: "proofs" },
         { label: "Results", id: "results" },

@@ -24,7 +24,7 @@ export default function ShadowCard({
     const card = cardRef.current
     if (!card) return
 
-    const isDark = document.documentElement.classList.contains("dark")
+    const isDark = theme === "dark"
     const isButton = variant === "button"
 
     const shadow = { x: 6, y: 6 }
