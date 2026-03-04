@@ -73,10 +73,19 @@ export default function Header() {
 
                     </div>
 
+                    {/* Theme Toggle */}
+                    <ShadowCard
+                        variant="button"
+                        onClick={toggleTheme}
+                        className="p-2 rounded-full cursor-pointer flex md:hidden items-center justify-center"
+                    >
+                        {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+                    </ShadowCard>
+
                     {/* Mobile Toggle */}
                     <button
                         onClick={() => setMobileOpen(!mobileOpen)}
-                        className="md:hidden"
+                        className="inline-block md:hidden"
                     >
                         {mobileOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>

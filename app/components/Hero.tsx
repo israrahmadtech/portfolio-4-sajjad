@@ -102,7 +102,7 @@ export default function HeroSection() {
 
                     </ShadowCard>
 
-                    <div className="mt-10 flex justify-between items-center">
+                    <div className="mt-10 gap-5 flex flex-col sm:flex-row justify-between items-center">
                         <div className="flex gap-5">
                             {[Github, Linkedin, Mail, Send].map((Icon, i) => (
                                 <ShadowCard variant="button"
@@ -115,7 +115,7 @@ export default function HeroSection() {
                         </div>
 
                         {/* CTA BUTTON */}
-                        <div className="ms-auto">
+                        <div className="mx-auto sm:mx-0 sm:ms-auto">
                             <ShadowCard variant="button" className="px-6 py-3 rounded-full cursor-pointer flex items-center gap-2">
                                 Contact me now
                                 <ArrowRight size={16} />
