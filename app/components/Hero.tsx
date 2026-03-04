@@ -23,7 +23,7 @@ export default function HeroSection() {
                         +10 years
                     </p>
 
-                    <ShadowText className="text-card font-extrabold text-[15vw] sm:text-7xl 2xl:text-8xl leading-[60px] sm:leading-[90px] 2xl:leading-tight tracking-tight">
+                    <ShadowText className="text-[#aaa] font-extrabold text-[15vw] sm:text-7xl 2xl:text-8xl leading-[60px] sm:leading-[90px] 2xl:leading-tight tracking-tight">
                         HELLO <br />
                         I’M A <br />
                         FULLSTACK
